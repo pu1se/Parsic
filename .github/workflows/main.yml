@@ -35,7 +35,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Run Playwright install (for Playwright tests)
-      run: npx playwright install --with-deps
+      run: npm init playwright@latest
 
     - name: Run tests
       run: dotnet test --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx"

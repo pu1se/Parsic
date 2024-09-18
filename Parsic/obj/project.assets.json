@@ -2,63 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Azure.Core/1.39.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
-          "System.ClientModel": "1.0.0",
-          "System.Diagnostics.DiagnosticSource": "6.0.1",
-          "System.Memory.Data": "1.0.2",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.7.2",
-          "System.Threading.Tasks.Extensions": "4.5.4"
-        },
-        "compile": {
-          "lib/net6.0/Azure.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Azure.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Azure.Storage.Blobs/12.20.0": {
-        "type": "package",
-        "dependencies": {
-          "Azure.Storage.Common": "12.19.0",
-          "System.Text.Json": "4.7.2"
-        },
-        "compile": {
-          "lib/net6.0/Azure.Storage.Blobs.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Azure.Storage.Blobs.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Azure.Storage.Common/12.19.0": {
-        "type": "package",
-        "dependencies": {
-          "Azure.Core": "1.39.0",
-          "System.IO.Hashing": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Azure.Storage.Common.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Azure.Storage.Common.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "BoDi/1.5.0": {
         "type": "package",
         "compile": {
@@ -849,15 +792,6 @@
           }
         }
       },
-      "RestSharp/106.3.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/RestSharp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/RestSharp.dll": {}
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -1119,23 +1053,6 @@
           "lib/netstandard1.6/System.AppContext.dll": {}
         }
       },
-      "System.ClientModel/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory.Data": "1.0.2",
-          "System.Text.Json": "4.7.2"
-        },
-        "compile": {
-          "lib/net6.0/System.ClientModel.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.ClientModel.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1213,23 +1130,17 @@
           }
         }
       },
-      "System.Diagnostics.DiagnosticSource/6.0.1": {
+      "System.Diagnostics.DiagnosticSource/5.0.0": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
         "compile": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+          "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+          "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.Diagnostics.Tracing/4.3.0": {
@@ -1373,22 +1284,6 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
-      "System.IO.Hashing/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/System.IO.Hashing.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.IO.Hashing.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        }
-      },
       "System.Linq/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1435,23 +1330,6 @@
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
-        }
-      },
-      "System.Memory.Data/1.0.2": {
-        "type": "package",
-        "dependencies": {
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.6.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Memory.Data.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Memory.Data.dll": {
-            "related": ".xml"
-          }
         }
       },
       "System.Net.Http/4.3.4": {
@@ -1510,15 +1388,6 @@
           "ref/netstandard1.3/System.Net.Primitives.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "System.Numerics.Vectors/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.ObjectModel/4.0.12": {
@@ -2183,79 +2052,10 @@
             "related": ".xml"
           }
         }
-      },
-      "System.Threading.Tasks.Extensions/4.5.4": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
-        }
       }
     }
   },
   "libraries": {
-    "Azure.Core/1.39.0": {
-      "sha512": "9vaV4ZICtVQp+2wjOKrIAjEjMzBkUohaBbKGqqcTW993MRfHA0N4L1BszQjWynS7lRvlYQLxaFK4wh9ewNm4HQ==",
-      "type": "package",
-      "path": "azure.core/1.39.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "README.md",
-        "azure.core.1.39.0.nupkg.sha512",
-        "azure.core.nuspec",
-        "azureicon.png",
-        "lib/net461/Azure.Core.dll",
-        "lib/net461/Azure.Core.xml",
-        "lib/net472/Azure.Core.dll",
-        "lib/net472/Azure.Core.xml",
-        "lib/net6.0/Azure.Core.dll",
-        "lib/net6.0/Azure.Core.xml",
-        "lib/netstandard2.0/Azure.Core.dll",
-        "lib/netstandard2.0/Azure.Core.xml"
-      ]
-    },
-    "Azure.Storage.Blobs/12.20.0": {
-      "sha512": "96HBFceJCwfv9Kg51F4C+MVIRhbAPtX2KupRaZqpGJW1FSWmo4JjOhi1sl3ZpZfPAiixYgTxhewMxSc/yd47/Q==",
-      "type": "package",
-      "path": "azure.storage.blobs/12.20.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "README.md",
-        "azure.storage.blobs.12.20.0.nupkg.sha512",
-        "azure.storage.blobs.nuspec",
-        "azureicon.png",
-        "lib/net6.0/Azure.Storage.Blobs.dll",
-        "lib/net6.0/Azure.Storage.Blobs.xml",
-        "lib/netstandard2.0/Azure.Storage.Blobs.dll",
-        "lib/netstandard2.0/Azure.Storage.Blobs.xml",
-        "lib/netstandard2.1/Azure.Storage.Blobs.dll",
-        "lib/netstandard2.1/Azure.Storage.Blobs.xml"
-      ]
-    },
-    "Azure.Storage.Common/12.19.0": {
-      "sha512": "aKW5fK4ZSQb9VjENSDbsQoKCDSG6d6mgsBA+groGoHyG2F38QCXThuwcmC7R1XLQOSIh28viE7CJw1BpNdl11A==",
-      "type": "package",
-      "path": "azure.storage.common/12.19.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "README.md",
-        "azure.storage.common.12.19.0.nupkg.sha512",
-        "azure.storage.common.nuspec",
-        "azureicon.png",
-        "lib/net6.0/Azure.Storage.Common.dll",
-        "lib/net6.0/Azure.Storage.Common.xml",
-        "lib/netstandard2.0/Azure.Storage.Common.dll",
-        "lib/netstandard2.0/Azure.Storage.Common.xml"
-      ]
-    },
     "BoDi/1.5.0": {
       "sha512": "CzIPzdIAFSd2zuLxI+0K9s48Qv3HQDbWiApn9h96j284rHs2bSPrn/PMca3mi4q3xLSEqOp+GUJ6+mXDD9prKg==",
       "type": "package",
@@ -3693,19 +3493,6 @@
         "packageIcon.png"
       ]
     },
-    "RestSharp/106.3.1": {
-      "sha512": "TmlN7SXjK52zzpQDTuzw7IH3XQ2Svtss/4zvQBKIgf74QIVxvlxoAqQYu1EhNQ1bMSBIQ4aK120BO7W+v8/kiQ==",
-      "type": "package",
-      "path": "restsharp/106.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/RestSharp.dll",
-        "lib/netstandard2.0/RestSharp.dll",
-        "restsharp.106.3.1.nupkg.sha512",
-        "restsharp.nuspec"
-      ]
-    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "sha512": "7VSGO0URRKoMEAq0Sc9cRz8mb6zbyx/BZDEWhgPdzzpmFhkam3fJ1DAGWFXBI4nGlma+uPKpfuMQP5LXRnOH5g==",
       "type": "package",
@@ -4304,24 +4091,6 @@
         "system.appcontext.nuspec"
       ]
     },
-    "System.ClientModel/1.0.0": {
-      "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
-      "type": "package",
-      "path": "system.clientmodel/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "DotNetPackageIcon.png",
-        "README.md",
-        "lib/net6.0/System.ClientModel.dll",
-        "lib/net6.0/System.ClientModel.xml",
-        "lib/netstandard2.0/System.ClientModel.dll",
-        "lib/netstandard2.0/System.ClientModel.xml",
-        "system.clientmodel.1.0.0.nupkg.sha512",
-        "system.clientmodel.nuspec"
-      ]
-    },
     "System.Collections/4.3.0": {
       "sha512": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
       "type": "package",
@@ -4637,29 +4406,32 @@
         "system.diagnostics.debug.nuspec"
       ]
     },
-    "System.Diagnostics.DiagnosticSource/6.0.1": {
-      "sha512": "KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==",
+    "System.Diagnostics.DiagnosticSource/5.0.0": {
+      "sha512": "tCQTzPsGZh/A9LhhA6zrqCRV4hOHsK90/G7q3Khxmn6tnB1PuNU0cRaKANP2AWcF9bn0zsuOoZOSrHuJk6oNBA==",
       "type": "package",
-      "path": "system.diagnostics.diagnosticsource/6.0.1",
+      "path": "system.diagnostics.diagnosticsource/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/System.Diagnostics.DiagnosticSource.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Diagnostics.DiagnosticSource.dll",
-        "lib/net461/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net46/System.Diagnostics.DiagnosticSource.xml",
         "lib/net5.0/System.Diagnostics.DiagnosticSource.dll",
         "lib/net5.0/System.Diagnostics.DiagnosticSource.xml",
-        "lib/net6.0/System.Diagnostics.DiagnosticSource.dll",
-        "lib/net6.0/System.Diagnostics.DiagnosticSource.xml",
-        "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
-        "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
-        "system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
         "system.diagnostics.diagnosticsource.nuspec",
-        "useSharedDesignerContext.txt"
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Diagnostics.Tracing/4.3.0": {
@@ -5128,29 +4900,6 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
-    "System.IO.Hashing/6.0.0": {
-      "sha512": "Rfm2jYCaUeGysFEZjDe7j1R4x6Z6BzumS/vUT5a1AA/AWJuGX71PoGB0RmpyX3VmrGqVnAwtfMn39OHR8Y/5+g==",
-      "type": "package",
-      "path": "system.io.hashing/6.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/System.IO.Hashing.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.IO.Hashing.dll",
-        "lib/net461/System.IO.Hashing.xml",
-        "lib/net6.0/System.IO.Hashing.dll",
-        "lib/net6.0/System.IO.Hashing.xml",
-        "lib/netstandard2.0/System.IO.Hashing.dll",
-        "lib/netstandard2.0/System.IO.Hashing.xml",
-        "system.io.hashing.6.0.0.nupkg.sha512",
-        "system.io.hashing.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
     "System.Linq/4.3.0": {
       "sha512": "5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
       "type": "package",
@@ -5307,24 +5056,6 @@
         "system.linq.expressions.nuspec"
       ]
     },
-    "System.Memory.Data/1.0.2": {
-      "sha512": "JGkzeqgBsiZwKJZ1IxPNsDFZDhUvuEdX8L8BDC8N3KOj+6zMcNU28CNN59TpZE/VJYy9cP+5M+sbxtWJx3/xtw==",
-      "type": "package",
-      "path": "system.memory.data/1.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGELOG.md",
-        "DotNetPackageIcon.png",
-        "README.md",
-        "lib/net461/System.Memory.Data.dll",
-        "lib/net461/System.Memory.Data.xml",
-        "lib/netstandard2.0/System.Memory.Data.dll",
-        "lib/netstandard2.0/System.Memory.Data.xml",
-        "system.memory.data.1.0.2.nupkg.sha512",
-        "system.memory.data.nuspec"
-      ]
-    },
     "System.Net.Http/4.3.4": {
       "sha512": "aOa2d51SEbmM+H+Csw7yJOuNZoHkrP2XnAurye5HWYgGVVU54YZDvsLUYRv6h18X3sPnjNCANmN7ZhIPiqMcjA==",
       "type": "package",
@@ -5444,53 +5175,6 @@
         "ref/xamarinwatchos10/_._",
         "system.net.primitives.4.3.0.nupkg.sha512",
         "system.net.primitives.nuspec"
-      ]
-    },
-    "System.Numerics.Vectors/4.5.0": {
-      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
-      "type": "package",
-      "path": "system.numerics.vectors/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Numerics.Vectors.dll",
-        "lib/net46/System.Numerics.Vectors.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.Numerics.Vectors.dll",
-        "lib/netstandard1.0/System.Numerics.Vectors.xml",
-        "lib/netstandard2.0/System.Numerics.Vectors.dll",
-        "lib/netstandard2.0/System.Numerics.Vectors.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/System.Numerics.Vectors.dll",
-        "ref/net45/System.Numerics.Vectors.xml",
-        "ref/net46/System.Numerics.Vectors.dll",
-        "ref/net46/System.Numerics.Vectors.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.0/System.Numerics.Vectors.dll",
-        "ref/netstandard1.0/System.Numerics.Vectors.xml",
-        "ref/netstandard2.0/System.Numerics.Vectors.dll",
-        "ref/netstandard2.0/System.Numerics.Vectors.xml",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.numerics.vectors.4.5.0.nupkg.sha512",
-        "system.numerics.vectors.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.ObjectModel/4.0.12": {
@@ -7117,54 +6801,15 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
-    },
-    "System.Threading.Tasks.Extensions/4.5.4": {
-      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
-      "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.Threading.Tasks.Extensions.dll",
-        "lib/net461/System.Threading.Tasks.Extensions.xml",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/netcoreapp2.1/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-        "system.threading.tasks.extensions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Azure.Storage.Blobs >= 12.20.0",
       "MSTest.TestAdapter >= 3.4.1",
       "MSTest.TestFramework >= 3.4.1",
       "Microsoft.NET.Test.Sdk >= 17.10.0",
       "Microsoft.Playwright >= 1.44.0",
       "Microsoft.Playwright.MSTest >= 1.44.0",
-      "RestSharp >= 106.3.1",
       "SpecFlow.MsTest >= 3.9.74",
       "SpecFlow.Plus.LivingDocPlugin >= 3.9.57"
     ]
@@ -7207,10 +6852,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "Azure.Storage.Blobs": {
-            "target": "Package",
-            "version": "[12.20.0, )"
-          },
           "MSTest.TestAdapter": {
             "target": "Package",
             "version": "[3.4.1, )"
@@ -7230,10 +6871,6 @@
           "Microsoft.Playwright.MSTest": {
             "target": "Package",
             "version": "[1.44.0, )"
-          },
-          "RestSharp": {
-            "target": "Package",
-            "version": "[106.3.1, )"
           },
           "SpecFlow.MsTest": {
             "target": "Package",
@@ -7263,17 +6900,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'RestSharp' 106.3.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-9pq7-rcxv-47vq",
-      "libraryId": "RestSharp",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }
