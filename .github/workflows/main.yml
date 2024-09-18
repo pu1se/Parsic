@@ -8,7 +8,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "*/5 * * * *"  # Schedule to run each 5 min
+    - cron: "*/5 * * * *"  # Schedule to run every 5 minutes
 
 jobs:
   build:
@@ -23,6 +23,11 @@ jobs:
       with:
         dotnet-version: '6.x'  # Use the appropriate .NET version
 
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'  # Install Node.js version 18.x
+
     - name: Restore dependencies
       run: dotnet restore
 
@@ -36,7 +41,7 @@ jobs:
       run: dotnet test --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx"
 
     - name: Upload test results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3  
       with:
         name: TestResults
         path: '**/*.trx'
