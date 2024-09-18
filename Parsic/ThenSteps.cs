@@ -35,7 +35,7 @@ namespace AutoTestic
                     }
 
                     var text = header.QuerySelectorAsync("a").Result?.InnerTextAsync().Result;
-                    text = text.ToLower().Trim();
+                    text = text!.ToLower().Trim();
                     if (text.Contains("дари") 
                         || 
                         text.Contains("скидк") 

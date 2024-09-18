@@ -48,7 +48,7 @@ namespace AutoTestic._Core
             text = await _element.GetAttributeAsync("ng-reflect-model");
             if (!text.IsNullOrEmpty())
             {
-                return text.Trim();
+                return text!.Trim();
             }
 
             return string.Empty;

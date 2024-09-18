@@ -37,9 +37,9 @@ jobs:
     - name: Run Playwright install (for Playwright tests)
       run: npx playwright install --with-deps
 
-    # Run the Playwright PowerShell script to install browsers
-    - name: Install Playwright browsers
-      run: pwsh ./bin/Debug/net6.0/playwright.ps1 install
+    - name: Run Playwright script
+      shell: pwsh
+      run: ./Parsic/bin/Debug/net6.0/playwright.ps1 install
 
     - name: Run tests
       run: dotnet test --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx"
