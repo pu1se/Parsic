@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\_projects\\Parsic2\\Parsic\\Parsic.csproj": {}
+    "E:\\_projects\\Parsic\\Parsic\\Parsic.csproj": {}
   },
   "projects": {
-    "C:\\_projects\\Parsic2\\Parsic\\Parsic.csproj": {
+    "E:\\_projects\\Parsic\\Parsic\\Parsic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_projects\\Parsic2\\Parsic\\Parsic.csproj",
+        "projectUniqueName": "E:\\_projects\\Parsic\\Parsic\\Parsic.csproj",
         "projectName": "Parsic",
-        "projectPath": "C:\\_projects\\Parsic2\\Parsic\\Parsic.csproj",
+        "projectPath": "E:\\_projects\\Parsic\\Parsic\\Parsic.csproj",
         "packagesPath": "C:\\Users\\PavelPontus\\.nuget\\packages\\",
-        "outputPath": "C:\\_projects\\Parsic2\\Parsic\\obj\\",
+        "outputPath": "E:\\_projects\\Parsic\\Parsic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PavelPontus\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1482,3 +1482,4 @@ C:\_projects\Parsic2\Parsic\obj\Debug\net8.0\refint\Parsic.dll
 C:\_projects\Parsic2\Parsic\obj\Debug\net8.0\Parsic.pdb
 C:\_projects\Parsic2\Parsic\obj\Debug\net8.0\Parsic.genruntimeconfig.cache
 C:\_projects\Parsic2\Parsic\obj\Debug\net8.0\ref\Parsic.dll
+E:\_projects\Parsic\Parsic\obj\Debug\net8.0\Parsic.sourcelink.json
