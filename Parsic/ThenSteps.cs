@@ -50,6 +50,8 @@ namespace AutoTestic
                         await SendEmail.ToSubscribedPeople("Notify about air plain discount", text);
                     }
                 }
+
+                await SendEmail.ToMyself("GitHub works", "hello");
             }
             catch (Exception exception)
             {

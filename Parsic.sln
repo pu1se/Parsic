@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A94082D-E684-4186-9331-87CDEB145E46}"
 	ProjectSection(SolutionItems) = preProject
 		Rreadme.md = Rreadme.md
+		workflow.yml = workflow.yml
 	EndProjectSection
 EndProject
 Global

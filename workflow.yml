@@ -1,0 +1,42 @@
+name: .NET Core CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "*/5 * * * *"  # Schedule to run each 5 min
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '6.x'  # Use the appropriate .NET version
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build the project
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Run Playwright install (for Playwright tests)
+      run: npx playwright install --with-deps
+
+    - name: Run tests
+      run: dotnet test --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx"
+      
+    - name: Upload test results
+      uses: actions/upload-artifact@v2
+      with:
+        name: TestResults
+        path: '**/*.trx'

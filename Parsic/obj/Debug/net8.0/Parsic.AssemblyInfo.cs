@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Parsic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a1b6dfe0e6aa5e8e30850d7aa58a708391d2a03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef344ddfcd8865c36ae2b0d56012374b448e923c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Parsic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Parsic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
