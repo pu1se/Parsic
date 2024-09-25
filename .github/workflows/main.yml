@@ -8,7 +8,8 @@ on:
     branches:
       - main
   schedule:
-    - cron: "*/5 * * * *"  # Schedule to run every 5 minutes
+    # Runs at 09:00 UTC every day
+    - cron: '0 9 * * *'
 
 jobs:
   build:
@@ -35,7 +36,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Run Playwright install (for Playwright tests)
-      run: npm playwright install
+      run: npm init playwright@latest
 
     - name: Run tests
       run: dotnet test --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx"
