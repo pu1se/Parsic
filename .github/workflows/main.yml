@@ -8,8 +8,8 @@ on:
     branches:
       - main
   schedule:
-    # Runs at 09:00 UTC every day
-    - cron: '0 9 * * *'
+    # Runs at 00:00 UTC at the first day of month
+    - cron: '0 0 1 * *'
 
 jobs:
   build:
